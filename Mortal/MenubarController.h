@@ -10,7 +10,7 @@
 
 #import "LifeProgress.h"
 
-@interface MenubarController : NSManagedObject
+@interface MenubarController : NSObject
 
 @property NSStatusItem *statusItem;
 @property LifeProgress *lifeProgress;

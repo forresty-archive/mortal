@@ -8,7 +8,7 @@
 
 #import <CoreData/CoreData.h>
 
-@interface LifeProgress : NSManagedObject
+@interface LifeProgress : NSObject
 
 @property int birthTime;
 
