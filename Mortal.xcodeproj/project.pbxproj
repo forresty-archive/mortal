@@ -13,6 +13,8 @@
 		686F98BF1568111C0049DFC6 /* Credits.rtf in Resources */ = {isa = PBXBuildFile; fileRef = 686F98BD1568111C0049DFC6 /* Credits.rtf */; };
 		686F98C21568111C0049DFC6 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 686F98C11568111C0049DFC6 /* AppDelegate.m */; };
 		686F98C51568111D0049DFC6 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 686F98C31568111D0049DFC6 /* MainMenu.xib */; };
+		686F98CD156811450049DFC6 /* MenubarController.m in Sources */ = {isa = PBXBuildFile; fileRef = 686F98CC156811450049DFC6 /* MenubarController.m */; };
+		686F98D41568138F0049DFC6 /* LifeProgress.m in Sources */ = {isa = PBXBuildFile; fileRef = 686F98D31568138F0049DFC6 /* LifeProgress.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -21,14 +23,18 @@
 		686F98B11568111C0049DFC6 /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
 		686F98B21568111C0049DFC6 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
 		686F98B31568111C0049DFC6 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
-		686F98B61568111C0049DFC6 /* Mortal-Info.plist */ = {isa = PBXFileReference; path = "Mortal-Info.plist"; sourceTree = "<group>"; };
+		686F98B61568111C0049DFC6 /* Mortal-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Mortal-Info.plist"; sourceTree = "<group>"; };
 		686F98B81568111C0049DFC6 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		686F98BA1568111C0049DFC6 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		686F98BC1568111C0049DFC6 /* Mortal-Prefix.pch */ = {isa = PBXFileReference; path = "Mortal-Prefix.pch"; sourceTree = "<group>"; };
+		686F98BC1568111C0049DFC6 /* Mortal-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Mortal-Prefix.pch"; sourceTree = "<group>"; };
 		686F98BE1568111C0049DFC6 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.rtf; name = en; path = en.lproj/Credits.rtf; sourceTree = "<group>"; };
-		686F98C01568111C0049DFC6 /* AppDelegate.h */ = {isa = PBXFileReference; path = AppDelegate.h; sourceTree = "<group>"; };
+		686F98C01568111C0049DFC6 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		686F98C11568111C0049DFC6 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		686F98C41568111D0049DFC6 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/MainMenu.xib; sourceTree = "<group>"; };
+		686F98CB156811450049DFC6 /* MenubarController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MenubarController.h; sourceTree = "<group>"; };
+		686F98CC156811450049DFC6 /* MenubarController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MenubarController.m; sourceTree = "<group>"; };
+		686F98D21568138F0049DFC6 /* LifeProgress.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LifeProgress.h; sourceTree = "<group>"; };
+		686F98D31568138F0049DFC6 /* LifeProgress.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LifeProgress.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -86,6 +92,10 @@
 				686F98C11568111C0049DFC6 /* AppDelegate.m */,
 				686F98C31568111D0049DFC6 /* MainMenu.xib */,
 				686F98B51568111C0049DFC6 /* Supporting Files */,
+				686F98CB156811450049DFC6 /* MenubarController.h */,
+				686F98CC156811450049DFC6 /* MenubarController.m */,
+				686F98D21568138F0049DFC6 /* LifeProgress.h */,
+				686F98D31568138F0049DFC6 /* LifeProgress.m */,
 			);
 			path = Mortal;
 			sourceTree = "<group>";
@@ -168,6 +178,8 @@
 			files = (
 				686F98BB1568111C0049DFC6 /* main.m in Sources */,
 				686F98C21568111C0049DFC6 /* AppDelegate.m in Sources */,
+				686F98CD156811450049DFC6 /* MenubarController.m in Sources */,
+				686F98D41568138F0049DFC6 /* LifeProgress.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
