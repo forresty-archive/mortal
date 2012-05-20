@@ -20,7 +20,6 @@
 		686F98AA1568111C0049DFC6 /* Mortal.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Mortal.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		686F98AE1568111C0049DFC6 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
 		686F98B11568111C0049DFC6 /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
-		686F98B21568111C0049DFC6 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
 		686F98B31568111C0049DFC6 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		686F98B61568111C0049DFC6 /* Mortal-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Mortal-Info.plist"; sourceTree = "<group>"; };
 		686F98B81568111C0049DFC6 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
@@ -77,7 +76,6 @@
 			isa = PBXGroup;
 			children = (
 				686F98B11568111C0049DFC6 /* AppKit.framework */,
-				686F98B21568111C0049DFC6 /* CoreData.framework */,
 				686F98B31568111C0049DFC6 /* Foundation.framework */,
 			);
 			name = "Other Frameworks";
