@@ -13,7 +13,7 @@
 @synthesize birthTime;
 
 #define SECONDS_PER_DAY (24*60*60)
-#define EXPECTED_LIFE_SPAN_IN_DAYS (75*365)
+#define EXPECTED_LIFE_SPAN_IN_DAYS (60*365)
 
 -(id)initWithBirthDate:(NSDate *)birthDate {
   self = [super init];
@@ -41,7 +41,7 @@
 }
 
 -(NSString *)currentProgressString {
-  return [NSString stringWithFormat:@"%.2f%%, %d days left", [self progress], [self daysLeft]];
+  return [NSString stringWithFormat:@"%.4f%%, %d days left", [self progress], [self daysLeft]];
 }
 
 @end

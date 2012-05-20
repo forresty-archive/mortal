@@ -22,7 +22,7 @@
     [self updateProgress];
 
     // updates every hour
-    NSTimer *timer = [NSTimer scheduledTimerWithTimeInterval: 3600
+    NSTimer *timer = [NSTimer scheduledTimerWithTimeInterval: 10
                                                       target: self
                                                     selector: @selector(updateProgress)
                                                     userInfo: nil
