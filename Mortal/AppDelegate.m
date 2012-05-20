@@ -10,11 +10,11 @@
 
 @implementation AppDelegate
 
-@synthesize menubarController;
+@synthesize statusBarController;
 
 - (void)applicationDidFinishLaunching:(NSNotification *)aNotification
 {
-  self.menubarController = [[MenubarController alloc] init];
+  self.statusBarController = [[StatusBarController alloc] init];
 }
 
 @end

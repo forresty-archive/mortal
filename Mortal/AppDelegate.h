@@ -7,10 +7,10 @@
 //
 
 #import <Cocoa/Cocoa.h>
-#import "MenubarController.h"
+#import "StatusBarController.h"
 
 @interface AppDelegate : NSObject <NSApplicationDelegate>
 
-@property (nonatomic, strong) MenubarController *menubarController;
+@property (nonatomic, strong) StatusBarController *statusBarController;
 
 @end

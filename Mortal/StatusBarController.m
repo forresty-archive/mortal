@@ -1,14 +1,14 @@
 //
-//  MenubarController.m
+//  StatusBarController.m
 //  Mortal
 //
 //  Created by Feng Ye on 5/20/12.
 //  Copyright (c) 2012 @forresty. All rights reserved.
 //
 
-#import "MenubarController.h"
+#import "StatusBarController.h"
 
-@implementation MenubarController
+@implementation StatusBarController
 
 @synthesize statusItem;
 @synthesize lifeProgress;

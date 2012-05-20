@@ -12,7 +12,7 @@
 		686F98BB1568111C0049DFC6 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 686F98BA1568111C0049DFC6 /* main.m */; };
 		686F98C21568111C0049DFC6 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 686F98C11568111C0049DFC6 /* AppDelegate.m */; };
 		686F98C51568111D0049DFC6 /* Main.xib in Resources */ = {isa = PBXBuildFile; fileRef = 686F98C31568111D0049DFC6 /* Main.xib */; };
-		686F98CD156811450049DFC6 /* MenubarController.m in Sources */ = {isa = PBXBuildFile; fileRef = 686F98CC156811450049DFC6 /* MenubarController.m */; };
+		686F98CD156811450049DFC6 /* StatusBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = 686F98CC156811450049DFC6 /* StatusBarController.m */; };
 		686F98D41568138F0049DFC6 /* LifeProgress.m in Sources */ = {isa = PBXBuildFile; fileRef = 686F98D31568138F0049DFC6 /* LifeProgress.m */; };
 /* End PBXBuildFile section */
 
@@ -28,8 +28,8 @@
 		686F98C01568111C0049DFC6 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		686F98C11568111C0049DFC6 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		686F98C41568111D0049DFC6 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/Main.xib; sourceTree = "<group>"; };
-		686F98CB156811450049DFC6 /* MenubarController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MenubarController.h; sourceTree = "<group>"; };
-		686F98CC156811450049DFC6 /* MenubarController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MenubarController.m; sourceTree = "<group>"; };
+		686F98CB156811450049DFC6 /* StatusBarController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StatusBarController.h; sourceTree = "<group>"; };
+		686F98CC156811450049DFC6 /* StatusBarController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StatusBarController.m; sourceTree = "<group>"; };
 		686F98D21568138F0049DFC6 /* LifeProgress.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LifeProgress.h; sourceTree = "<group>"; };
 		686F98D31568138F0049DFC6 /* LifeProgress.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LifeProgress.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -88,8 +88,8 @@
 				686F98C11568111C0049DFC6 /* AppDelegate.m */,
 				686F98C31568111D0049DFC6 /* Main.xib */,
 				686F98B51568111C0049DFC6 /* Supporting Files */,
-				686F98CB156811450049DFC6 /* MenubarController.h */,
-				686F98CC156811450049DFC6 /* MenubarController.m */,
+				686F98CB156811450049DFC6 /* StatusBarController.h */,
+				686F98CC156811450049DFC6 /* StatusBarController.m */,
 				686F98D21568138F0049DFC6 /* LifeProgress.h */,
 				686F98D31568138F0049DFC6 /* LifeProgress.m */,
 			);
@@ -172,7 +172,7 @@
 			files = (
 				686F98BB1568111C0049DFC6 /* main.m in Sources */,
 				686F98C21568111C0049DFC6 /* AppDelegate.m in Sources */,
-				686F98CD156811450049DFC6 /* MenubarController.m in Sources */,
+				686F98CD156811450049DFC6 /* StatusBarController.m in Sources */,
 				686F98D41568138F0049DFC6 /* LifeProgress.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

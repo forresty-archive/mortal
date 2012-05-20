@@ -1,5 +1,5 @@
 //
-//  MenubarController.h
+//  StatusBarController.h
 //  Mortal
 //
 //  Created by Feng Ye on 5/20/12.
@@ -10,7 +10,7 @@
 
 #import "LifeProgress.h"
 
-@interface MenubarController : NSObject
+@interface StatusBarController : NSObject
 
 @property NSStatusItem *statusItem;
 @property LifeProgress *lifeProgress;
