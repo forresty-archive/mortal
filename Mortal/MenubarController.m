@@ -33,13 +33,17 @@
   return self;
 }
 
+-(NSString *)currentProgressString {
+  return [NSString stringWithFormat:@"%.4f%%, %d days left", [lifeProgress percentageLived], [lifeProgress daysLeft]];
+}
+
 -(void)updateProgress {
   NSFont *font = [NSFont fontWithName:@"Lucida Grande" size:13];
   NSDictionary *attrsDictionary =
   [NSDictionary dictionaryWithObject:font
                               forKey:NSFontAttributeName];
   NSAttributedString *title = [[NSAttributedString alloc]
-                               initWithString:[lifeProgress currentProgressString]
+                               initWithString:[self currentProgressString]
                                attributes:attrsDictionary];
   [statusItem setAttributedTitle:title];
 }

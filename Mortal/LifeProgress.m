@@ -11,17 +11,26 @@
 @implementation LifeProgress
 
 @synthesize birthTime;
+@synthesize expectedYearsToLive;
 
 #define SECONDS_PER_DAY (24*60*60)
-#define EXPECTED_LIFE_SPAN_IN_DAYS (60*365)
 
 -(id)initWithBirthDate:(NSDate *)birthDate {
+  return [self initWithBirthDate:birthDate expectedYearsToLive:60];
+}
+
+-(id)initWithBirthDate:(NSDate *)birthDate expectedYearsToLive:(int)years {
   self = [super init];
   if (self) {
     birthTime = [birthDate timeIntervalSince1970];
+    expectedYearsToLive = years;
   }
 
   return self;
+}
+
+-(int)expectedLifeSpanInDays {
+  return 365 * [self expectedYearsToLive];
 }
 
 -(int)secondsLived {
@@ -32,16 +41,12 @@
   return (int)([self secondsLived] / SECONDS_PER_DAY);
 }
 
--(double)progress {
-  return [self secondsLived] * 100.0 / SECONDS_PER_DAY / EXPECTED_LIFE_SPAN_IN_DAYS;
+-(double)percentageLived {
+  return [self secondsLived] * 100.0 / SECONDS_PER_DAY / [self expectedLifeSpanInDays];
 }
 
 -(int)daysLeft {
-  return EXPECTED_LIFE_SPAN_IN_DAYS - [self daysLived];
-}
-
--(NSString *)currentProgressString {
-  return [NSString stringWithFormat:@"%.4f%%, %d days left", [self progress], [self daysLeft]];
+  return [self expectedLifeSpanInDays] - [self daysLived];
 }
 
 @end
