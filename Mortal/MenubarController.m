@@ -21,7 +21,6 @@
 
     [self updateProgress];
 
-    // updates every hour
     NSTimer *timer = [NSTimer scheduledTimerWithTimeInterval: 10
                                                       target: self
                                                     selector: @selector(updateProgress)
