@@ -12,11 +12,21 @@
 
 @synthesize statusItem;
 @synthesize lifeProgress;
+@synthesize statusMenu;
 
 -(id)init {
   self = [super init];
   if (self) {
+    NSMenuItem *menuItem = [[NSMenuItem alloc] initWithTitle:@"Quit" action:@selector(quitApp) keyEquivalent:@"q"];
+    [menuItem setTarget:self];
+
+    statusMenu = [[NSMenu alloc] init];
+    [statusMenu addItem:menuItem];
+
     statusItem = [[NSStatusBar systemStatusBar] statusItemWithLength:NSVariableStatusItemLength];
+    [statusItem setHighlightMode:YES];
+    [statusItem setMenu:statusMenu];
+
     lifeProgress = [[LifeProgress alloc] initWithBirthDate:[NSDate dateWithNaturalLanguageString:@"1986-10-07"]];
 
     [self updateProgress];
@@ -30,6 +40,10 @@
   }
 
   return self;
+}
+
+-(void)quitApp {
+  exit(0);
 }
 
 -(NSString *)currentProgressString {

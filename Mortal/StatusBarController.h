@@ -14,5 +14,6 @@
 
 @property NSStatusItem *statusItem;
 @property LifeProgress *lifeProgress;
+@property NSMenu *statusMenu;
 
 @end
