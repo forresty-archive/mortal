@@ -16,7 +16,7 @@
 #define SECONDS_PER_DAY (24*60*60)
 
 -(id)initWithBirthDate:(NSDate *)birthDate {
-  return [self initWithBirthDate:birthDate expectedYearsToLive:60];
+  return [self initWithBirthDate:birthDate expectedYearsToLive:30];
 }
 
 -(id)initWithBirthDate:(NSDate *)birthDate expectedYearsToLive:(int)years {
