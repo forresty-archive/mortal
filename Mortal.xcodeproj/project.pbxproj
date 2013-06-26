@@ -100,34 +100,24 @@
 		686F98AD1568111C0049DFC6 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				686F98AE1568111C0049DFC6 /* Cocoa.framework */,
-				68868DB6177A90BD003ACC96 /* SenTestingKit.framework */,
-				686F98B01568111C0049DFC6 /* Other Frameworks */,
-			);
-			name = Frameworks;
-			sourceTree = "<group>";
-		};
-		686F98B01568111C0049DFC6 /* Other Frameworks */ = {
-			isa = PBXGroup;
-			children = (
 				686F98B11568111C0049DFC6 /* AppKit.framework */,
 				686F98B31568111C0049DFC6 /* Foundation.framework */,
 				68868DB9177A90BD003ACC96 /* CoreData.framework */,
+				686F98AE1568111C0049DFC6 /* Cocoa.framework */,
+				68868DB6177A90BD003ACC96 /* SenTestingKit.framework */,
 			);
-			name = "Other Frameworks";
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 		686F98B41568111C0049DFC6 /* Mortal */ = {
 			isa = PBXGroup;
 			children = (
+				68868DCD177A93A6003ACC96 /* Controllers */,
+				68868DCC177A939B003ACC96 /* Models */,
 				686F98C01568111C0049DFC6 /* AppDelegate.h */,
 				686F98C11568111C0049DFC6 /* AppDelegate.m */,
 				686F98C31568111D0049DFC6 /* Main.xib */,
 				686F98B51568111C0049DFC6 /* Supporting Files */,
-				686F98CB156811450049DFC6 /* StatusBarController.h */,
-				686F98CC156811450049DFC6 /* StatusBarController.m */,
-				686F98D21568138F0049DFC6 /* LifeProgress.h */,
-				686F98D31568138F0049DFC6 /* LifeProgress.m */,
 			);
 			path = Mortal;
 			sourceTree = "<group>";
@@ -161,6 +151,24 @@
 				68868DC3177A90BD003ACC96 /* Mortal Test-Prefix.pch */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		68868DCC177A939B003ACC96 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				686F98D21568138F0049DFC6 /* LifeProgress.h */,
+				686F98D31568138F0049DFC6 /* LifeProgress.m */,
+			);
+			name = Models;
+			sourceTree = "<group>";
+		};
+		68868DCD177A93A6003ACC96 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				686F98CB156811450049DFC6 /* StatusBarController.h */,
+				686F98CC156811450049DFC6 /* StatusBarController.m */,
+			);
+			name = Controllers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
