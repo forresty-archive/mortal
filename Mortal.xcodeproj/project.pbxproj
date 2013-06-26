@@ -49,7 +49,6 @@
 		686F98D31568138F0049DFC6 /* LifeProgress.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LifeProgress.m; sourceTree = "<group>"; };
 		68868DB5177A90BD003ACC96 /* Mortal Test.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Mortal Test.octest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		68868DB6177A90BD003ACC96 /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
-		68868DB9177A90BD003ACC96 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
 		68868DBC177A90BD003ACC96 /* Mortal Test-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Mortal Test-Info.plist"; sourceTree = "<group>"; };
 		68868DBE177A90BD003ACC96 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		68868DC0177A90BD003ACC96 /* Mortal_Test.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Mortal_Test.h; sourceTree = "<group>"; };
@@ -102,7 +101,6 @@
 			children = (
 				686F98B11568111C0049DFC6 /* AppKit.framework */,
 				686F98B31568111C0049DFC6 /* Foundation.framework */,
-				68868DB9177A90BD003ACC96 /* CoreData.framework */,
 				686F98AE1568111C0049DFC6 /* Cocoa.framework */,
 				68868DB6177A90BD003ACC96 /* SenTestingKit.framework */,
 			);
@@ -475,6 +473,7 @@
 				68868DC5177A90BD003ACC96 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
