@@ -10,10 +10,7 @@
 
 #import "LifeProgress.h"
 
-@interface StatusBarController : NSObject
 
-@property NSStatusItem *statusItem;
-@property LifeProgress *lifeProgress;
-@property NSMenu *statusMenu;
+@interface StatusBarController : NSObject
 
 @end

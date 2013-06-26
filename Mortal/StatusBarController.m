@@ -8,11 +8,13 @@
 
 #import "StatusBarController.h"
 
-@implementation StatusBarController
+@implementation StatusBarController {
+@private
+  NSStatusItem *statusItem;
+  LifeProgress *lifeProgress;
+  NSMenu *statusMenu;
+}
 
-@synthesize statusItem;
-@synthesize lifeProgress;
-@synthesize statusMenu;
 
 -(id)init {
   self = [super init];
@@ -43,13 +45,16 @@
   return self;
 }
 
+
 -(void)quitApp {
   exit(0);
 }
 
+
 -(NSString *)currentProgressString {
   return [NSString stringWithFormat:@"%.4f%%, %d days left", [lifeProgress percentageLived], [lifeProgress daysLeft]];
 }
+
 
 -(void)updateProgress {
   NSFont *font = [NSFont fontWithName:@"Lucida Grande" size:13];
@@ -62,5 +67,6 @@
 
   [statusItem setAttributedTitle:title];
 }
+
 
 @end
