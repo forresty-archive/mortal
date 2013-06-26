@@ -16,6 +16,7 @@
 
 -(id)init {
   self = [super init];
+
   if (self) {
     NSMenuItem *menuItem = [[NSMenuItem alloc] initWithTitle:@"Quit" action:@selector(quitApp) keyEquivalent:@"q"];
     [menuItem setTarget:self];
@@ -52,12 +53,13 @@
 
 -(void)updateProgress {
   NSFont *font = [NSFont fontWithName:@"Lucida Grande" size:13];
-  NSDictionary *attrsDictionary =
-  [NSDictionary dictionaryWithObject:font
-                              forKey:NSFontAttributeName];
-  NSAttributedString *title = [[NSAttributedString alloc]
-                               initWithString:[self currentProgressString]
-                               attributes:attrsDictionary];
+
+  NSDictionary *attrsDictionary = [NSDictionary dictionaryWithObject:font
+                                                              forKey:NSFontAttributeName];
+
+  NSAttributedString *title = [[NSAttributedString alloc] initWithString:[self currentProgressString]
+                                                              attributes:attrsDictionary];
+
   [statusItem setAttributedTitle:title];
 }
 
