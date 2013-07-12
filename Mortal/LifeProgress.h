@@ -10,13 +10,18 @@
 
 @interface LifeProgress : NSObject
 
+
 @property int birthTime;
 @property int expectedYearsToLive;
 
--(id)initWithBirthDate:(NSDate *)birthDate;
--(id)initWithBirthDate:(NSDate *)birthDate expectedYearsToLive:(int)years;
+@property (readonly) int expectedLifeSpanInDays;
+@property (readonly) int daysLeft;
+@property (readonly) double percentageLived;
+@property (readonly) int secondsLived;
 
--(int)daysLeft;
--(double)percentageLived;
+
+- (id)initWithBirthDate:(NSDate *)birthDate;
+- (id)initWithBirthDate:(NSDate *)birthDate expectedYearsToLive:(int)years;
+
 
 @end

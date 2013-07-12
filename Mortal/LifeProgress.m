@@ -8,45 +8,56 @@
 
 #import "LifeProgress.h"
 
+
 @implementation LifeProgress
 
-@synthesize birthTime;
-@synthesize expectedYearsToLive;
 
 #define SECONDS_PER_DAY (24*60*60)
 
--(id)initWithBirthDate:(NSDate *)birthDate {
+
+- (id)initWithBirthDate:(NSDate *)birthDate {
   return [self initWithBirthDate:birthDate expectedYearsToLive:30];
 }
 
--(id)initWithBirthDate:(NSDate *)birthDate expectedYearsToLive:(int)years {
+
+- (id)initWithBirthDate:(NSDate *)birthDate expectedYearsToLive:(int)years {
   self = [super init];
   if (self) {
-    birthTime = [birthDate timeIntervalSince1970];
-    expectedYearsToLive = years;
+    _birthTime = [birthDate timeIntervalSince1970];
+    _expectedYearsToLive = years;
   }
 
   return self;
 }
 
--(int)expectedLifeSpanInDays {
-  return 365 * [self expectedYearsToLive];
+
+# pragma mark
+# pragma mark - properties
+
+
+- (int)expectedLifeSpanInDays {
+  return 365 * self.expectedYearsToLive;
 }
 
--(int)secondsLived {
-  return [[NSDate date] timeIntervalSince1970] - birthTime;
+
+- (int)secondsLived {
+  return [[NSDate date] timeIntervalSince1970] - self.birthTime;
 }
 
--(int)daysLived {
-  return (int)([self secondsLived] / SECONDS_PER_DAY);
+
+- (int)daysLived {
+  return (int)(self.secondsLived / SECONDS_PER_DAY);
 }
 
--(double)percentageLived {
-  return [self secondsLived] * 100.0 / SECONDS_PER_DAY / [self expectedLifeSpanInDays];
+
+- (double)percentageLived {
+  return self.secondsLived * 100.0 / SECONDS_PER_DAY / self.expectedLifeSpanInDays;
 }
 
--(int)daysLeft {
-  return [self expectedLifeSpanInDays] - [self daysLived];
+
+- (int)daysLeft {
+  return self.expectedLifeSpanInDays - self.daysLived;
 }
+
 
 @end
