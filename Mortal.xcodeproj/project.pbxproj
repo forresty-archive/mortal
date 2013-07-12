@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0D1F6ED2482C4CC4A41B6E28 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = FD08BD9D84664205A0C0A99E /* libPods.a */; };
 		686F98AF1568111C0049DFC6 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 686F98AE1568111C0049DFC6 /* Cocoa.framework */; };
 		686F98B91568111C0049DFC6 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 686F98B71568111C0049DFC6 /* InfoPlist.strings */; };
 		686F98BB1568111C0049DFC6 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 686F98BA1568111C0049DFC6 /* main.m */; };
@@ -18,7 +19,7 @@
 		68868DB8177A90BD003ACC96 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 686F98AE1568111C0049DFC6 /* Cocoa.framework */; };
 		68868DBF177A90BD003ACC96 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 68868DBD177A90BD003ACC96 /* InfoPlist.strings */; };
 		68868DC2177A90BD003ACC96 /* Mortal_Test.m in Sources */ = {isa = PBXBuildFile; fileRef = 68868DC1177A90BD003ACC96 /* Mortal_Test.m */; };
-		68868DCB177A9239003ACC96 /* LifeProgress.m in Sources */ = {isa = PBXBuildFile; fileRef = 686F98D31568138F0049DFC6 /* LifeProgress.m */; };
+		68868DDB177B2911003ACC96 /* LifeProgress.m in Sources */ = {isa = PBXBuildFile; fileRef = 686F98D31568138F0049DFC6 /* LifeProgress.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -54,6 +55,8 @@
 		68868DC0177A90BD003ACC96 /* Mortal_Test.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Mortal_Test.h; sourceTree = "<group>"; };
 		68868DC1177A90BD003ACC96 /* Mortal_Test.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Mortal_Test.m; sourceTree = "<group>"; };
 		68868DC3177A90BD003ACC96 /* Mortal Test-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Mortal Test-Prefix.pch"; sourceTree = "<group>"; };
+		8C24E2197F4847C190D2A7E7 /* Pods.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.xcconfig; path = Pods/Pods.xcconfig; sourceTree = SOURCE_ROOT; };
+		FD08BD9D84664205A0C0A99E /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,6 +65,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				686F98AF1568111C0049DFC6 /* Cocoa.framework in Frameworks */,
+				0D1F6ED2482C4CC4A41B6E28 /* libPods.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -84,6 +88,7 @@
 				68868DBA177A90BD003ACC96 /* Mortal Test */,
 				686F98AD1568111C0049DFC6 /* Frameworks */,
 				686F98AB1568111C0049DFC6 /* Products */,
+				8C24E2197F4847C190D2A7E7 /* Pods.xcconfig */,
 			);
 			sourceTree = "<group>";
 		};
@@ -103,6 +108,7 @@
 				686F98B31568111C0049DFC6 /* Foundation.framework */,
 				686F98AE1568111C0049DFC6 /* Cocoa.framework */,
 				68868DB6177A90BD003ACC96 /* SenTestingKit.framework */,
+				FD08BD9D84664205A0C0A99E /* libPods.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -176,9 +182,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 686F98C81568111D0049DFC6 /* Build configuration list for PBXNativeTarget "Mortal" */;
 			buildPhases = (
+				8C38392DD151434ABC98147D /* Check Pods Manifest.lock */,
 				686F98A61568111C0049DFC6 /* Sources */,
 				686F98A71568111C0049DFC6 /* Frameworks */,
 				686F98A81568111C0049DFC6 /* Resources */,
+				BFD9FC345F4A48D288CC523A /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -269,6 +277,34 @@
 			shellPath = /bin/sh;
 			shellScript = "# Run the unit tests in this test bundle.\n\"${SYSTEM_DEVELOPER_DIR}/Tools/RunUnitTests\"\n";
 		};
+		8C38392DD151434ABC98147D /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+		};
+		BFD9FC345F4A48D288CC523A /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Pods-resources.sh\"\n";
+		};
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -287,7 +323,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				68868DCB177A9239003ACC96 /* LifeProgress.m in Sources */,
+				68868DDB177B2911003ACC96 /* LifeProgress.m in Sources */,
 				68868DC2177A90BD003ACC96 /* Mortal_Test.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -387,6 +423,7 @@
 		};
 		686F98C91568111D0049DFC6 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8C24E2197F4847C190D2A7E7 /* Pods.xcconfig */;
 			buildSettings = {
 				COMBINE_HIDPI_IMAGES = YES;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
@@ -400,6 +437,7 @@
 		};
 		686F98CA1568111D0049DFC6 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8C24E2197F4847C190D2A7E7 /* Pods.xcconfig */;
 			buildSettings = {
 				COMBINE_HIDPI_IMAGES = YES;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
@@ -413,6 +451,7 @@
 		};
 		68868DC4177A90BD003ACC96 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8C24E2197F4847C190D2A7E7 /* Pods.xcconfig */;
 			buildSettings = {
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
 				CLANG_CXX_LIBRARY = "libc++";

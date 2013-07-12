@@ -8,16 +8,19 @@
 
 #import "Mortal_Test.h"
 #import "LifeProgress.h"
+#import "Kiwi.h"
 
 @implementation Mortal_Test {
   LifeProgress *__lifeProgress;
+  NSDate *__now;
 }
 
 
 - (void)setUp {
   [super setUp];
 
-  __lifeProgress = [[LifeProgress alloc] initWithBirthDate:[NSDate date] expectedYearsToLive:1];
+  __now = [NSDate date];
+  __lifeProgress = [[LifeProgress alloc] initWithBirthDate:__now expectedYearsToLive:1];
 }
 
 
