@@ -52,7 +52,7 @@
 
 
 -(NSString *)currentProgressString {
-  return [NSString stringWithFormat:@"%.4f%%, %d days left", [lifeProgress percentageLived], [lifeProgress daysLeft]];
+  return [NSString stringWithFormat:@"%.4f%%, %d hours", lifeProgress.percentageLived, lifeProgress.hoursLeft];
 }
 
 
