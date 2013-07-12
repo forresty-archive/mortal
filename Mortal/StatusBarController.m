@@ -59,8 +59,7 @@
 -(void)updateProgress {
   NSFont *font = [NSFont fontWithName:@"Lucida Grande" size:13];
 
-  NSDictionary *attrsDictionary = [NSDictionary dictionaryWithObject:font
-                                                              forKey:NSFontAttributeName];
+  NSDictionary *attrsDictionary = @{ NSFontAttributeName: font };
 
   NSAttributedString *title = [[NSAttributedString alloc] initWithString:[self currentProgressString]
                                                               attributes:attrsDictionary];
