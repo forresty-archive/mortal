@@ -15,9 +15,15 @@
 @property int expectedYearsToLive;
 
 @property (readonly) int expectedLifeSpanInDays;
+@property (readonly) int expectedLifeSpanInHours;
+
 @property (readonly) int daysLeft;
+@property (readonly) int hoursLeft;
+
 @property (readonly) double percentageLived;
 @property (readonly) int secondsLived;
+@property (readonly) int hoursLived;
+@property (readonly) int daysLived;
 
 
 - (id)initWithBirthDate:(NSDate *)birthDate;

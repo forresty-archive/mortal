@@ -12,7 +12,8 @@
 @implementation LifeProgress
 
 
-#define SECONDS_PER_DAY (24*60*60)
+#define SECONDS_PER_HOUR (60 * 60)
+#define SECONDS_PER_DAY (24 * SECONDS_PER_HOUR)
 
 
 - (id)initWithBirthDate:(NSDate *)birthDate {
@@ -40,8 +41,18 @@
 }
 
 
+- (int)expectedLifeSpanInHours {
+  return self.expectedLifeSpanInDays * 24;
+}
+
+
 - (int)secondsLived {
   return [[NSDate date] timeIntervalSince1970] - self.birthTime;
+}
+
+
+- (int)hoursLived {
+  return (int)(self.secondsLived / SECONDS_PER_HOUR);
 }
 
 
@@ -57,6 +68,11 @@
 
 - (int)daysLeft {
   return self.expectedLifeSpanInDays - self.daysLived;
+}
+
+
+- (int)hoursLeft {
+  return self.expectedLifeSpanInHours - self.hoursLived;
 }
 
 

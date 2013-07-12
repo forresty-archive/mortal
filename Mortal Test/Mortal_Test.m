@@ -34,6 +34,11 @@
 }
 
 
+- (void)testHoursLeft {
+  STAssertEquals([__lifeProgress hoursLeft], 365 * 24, @"should have 365 * 24 hours left to live");
+}
+
+
 - (void)testPercentageLived {
   STAssertEqualsWithAccuracy([__lifeProgress percentageLived], 0.0, 0.001, @"should have not lived");
 }
